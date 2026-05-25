@@ -27,18 +27,12 @@
   <!-- <base>: define la URL base para todos los enlaces relativos del documento -->
   <base href="https://www.example.com/">
 
-  <!-- <link>: vincula un recurso externo; aquí usamos un ícono de pestaña (favicon) -->
+  <!-- <link rel="icon">: favicon que aparece en la pestaña del navegador -->
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/32/732/732212.png" type="image/png">
 
-  <style>
-    /* Estilos mínimos solo para separar visualmente las secciones */
-    body { font-family: Arial, sans-serif; max-width: 960px; margin: 0 auto; padding: 20px; }
-    section { border: 1px solid #ccc; margin-bottom: 24px; padding: 16px; border-radius: 6px; }
-    h2 { background: #e8f0fe; padding: 6px 10px; border-left: 4px solid #1a73e8; }
-    code, kbd, pre { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
-    table { border-collapse: collapse; width: 100%; }
-    td, th { border: 1px solid #ccc; padding: 6px 10px; }
-  </style>
+  <!-- <link rel="stylesheet">: vincula la hoja de estilos externa.
+       Separar CSS de HTML es una buena práctica: facilita mantenimiento y reutilización. -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <!-- <body>: contiene todo el contenido visible de la página -->
@@ -52,11 +46,11 @@
     <p><strong>Curso:</strong> ISW-512 Diseño de Aplicaciones Web</p>
     <p><strong>Estudiante:</strong> Luis Solis</p>
 
-    <!-- <img> con avatar placeholder que representa al estudiante -->
+    <!-- <img> con fotografía/avatar del estudiante almacenada en la carpeta images/ -->
     <figure>
       <img
-        src="https://api.dicebear.com/7.x/avataaars/svg?seed=Luis"
-        alt="Avatar del estudiante Luis Solis"
+        src="images/Loirstein14Avatar.png"
+        alt="Avatar del estudiante Luis"
         width="120"
         height="120"
         title="Avatar de Luis"
