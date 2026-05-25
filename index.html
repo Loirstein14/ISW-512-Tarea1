@@ -1,0 +1,474 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- ============================================================
+       A. ETIQUETAS DE ESTRUCTURA BÁSICA
+       ============================================================ -->
+
+  <!-- <meta charset>: indica al navegador qué codificación de caracteres usar -->
+  <meta charset="UTF-8">
+
+  <!-- <meta viewport>: esencial para que la página se vea bien en móviles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <meta description>: descripción del sitio para motores de búsqueda (SEO) -->
+  <meta name="description" content="Página de demostración de etiquetas HTML5 - Tarea 1 ISW-512">
+
+  <!-- <meta author>: indica el autor del documento -->
+  <meta name="author" content="Luis">
+
+  <!-- <meta keywords>: palabras clave del documento (menos relevante hoy, pero válido) -->
+  <meta name="keywords" content="HTML5, etiquetas, ISW-512, diseño web">
+
+  <!-- <title>: texto que aparece en la pestaña del navegador -->
+  <title>Tarea 1 - Etiquetas HTML5 | ISW-512</title>
+
+  <!-- <base>: define la URL base para todos los enlaces relativos del documento -->
+  <base href="https://www.example.com/">
+
+  <!-- <link>: vincula un recurso externo; aquí usamos un ícono de pestaña (favicon) -->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/32/732/732212.png" type="image/png">
+
+  <style>
+    /* Estilos mínimos solo para separar visualmente las secciones */
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: 0 auto; padding: 20px; }
+    section { border: 1px solid #ccc; margin-bottom: 24px; padding: 16px; border-radius: 6px; }
+    h2 { background: #e8f0fe; padding: 6px 10px; border-left: 4px solid #1a73e8; }
+    code, kbd, pre { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+    table { border-collapse: collapse; width: 100%; }
+    td, th { border: 1px solid #ccc; padding: 6px 10px; }
+  </style>
+</head>
+
+<!-- <body>: contiene todo el contenido visible de la página -->
+<body>
+
+  <!-- ============================================================
+       ENCABEZADO DE LA PÁGINA — identificación del estudiante
+       ============================================================ -->
+  <header>
+    <h1>Tarea 1: Demostración de Etiquetas HTML5</h1>
+    <p><strong>Curso:</strong> ISW-512 Diseño de Aplicaciones Web</p>
+    <p><strong>Estudiante:</strong> Luis [Apellido]</p>
+
+    <!-- <img> con avatar placeholder que representa al estudiante -->
+    <figure>
+      <img
+        src="https://api.dicebear.com/7.x/avataaars/svg?seed=Luis"
+        alt="Avatar del estudiante Luis"
+        width="120"
+        height="120"
+        title="Avatar de Luis"
+      >
+      <figcaption>Avatar representativo del estudiante</figcaption>
+    </figure>
+  </header>
+
+  <!-- ============================================================
+       B. ETIQUETAS DE ESTRUCTURA DE SECCIÓN
+       ============================================================ -->
+  <section id="seccion-estructura">
+    <h2>B. Etiquetas de Estructura de Sección</h2>
+
+    <!-- <h1> a <h6>: niveles de encabezado jerárquico -->
+    <h1>Encabezado nivel 1 (h1) — el más importante</h1>
+    <h2>Encabezado nivel 2 (h2)</h2>
+    <h3>Encabezado nivel 3 (h3)</h3>
+    <h4>Encabezado nivel 4 (h4)</h4>
+    <h5>Encabezado nivel 5 (h5)</h5>
+    <h6>Encabezado nivel 6 (h6) — el menos importante</h6>
+
+    <!-- <hgroup>: agrupa un título y subtítulo relacionados -->
+    <hgroup>
+      <h3>Título del artículo principal</h3>
+      <p>Subtítulo o descripción breve del artículo</p>
+    </hgroup>
+
+    <!-- <address>: información de contacto del autor -->
+    <address>
+      Autor: Luis [Apellido] &mdash;
+      <a href="mailto:luis@example.com">luis@example.com</a> &mdash;
+      Universidad, Costa Rica
+    </address>
+
+    <!-- <div>: contenedor genérico sin semántica propia, útil para agrupar con CSS/JS -->
+    <div style="background:#fafafa; padding:10px; border:1px dashed #aaa; margin-top:10px;">
+      <p>Este texto está dentro de un <code>&lt;div&gt;</code>. El div agrupa elementos
+         sin añadir significado semántico; se usa para aplicar estilos o manipular
+         el DOM con JavaScript.</p>
+    </div>
+
+    <!-- <iframe>: muestra una página web dentro de otra página -->
+    <h3>Demostración de &lt;iframe&gt; (sitio externo)</h3>
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-84.1,9.9,-83.9,10.1&layer=mapnik"
+      width="100%"
+      height="200"
+      title="Mapa embebido con iframe"
+      loading="lazy">
+    </iframe>
+    <p><small>Mapa de Costa Rica incrustado con <code>&lt;iframe&gt;</code>.</small></p>
+  </section>
+
+  <!-- ============================================================
+       C. ETIQUETAS DE ESTRUCTURA DE GRUPO
+       ============================================================ -->
+  <section id="seccion-grupos">
+    <h2>C. Etiquetas de Estructura de Grupo</h2>
+
+    <!-- <ul> y <li>: lista desordenada -->
+    <h3>Lista desordenada &lt;ul&gt;</h3>
+    <ul>
+      <li>Elemento sin orden específico A</li>
+      <li>Elemento sin orden específico B</li>
+      <li>Elemento sin orden específico C</li>
+    </ul>
+
+    <!-- <ol> y <li>: lista ordenada -->
+    <h3>Lista ordenada &lt;ol&gt;</h3>
+    <ol>
+      <li>Primer paso del proceso</li>
+      <li>Segundo paso del proceso</li>
+      <li>Tercer paso del proceso</li>
+    </ol>
+
+    <!-- <dl>, <dt>, <dd>: lista de descripción (término + definición) -->
+    <h3>Lista de descripción &lt;dl&gt;</h3>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language — lenguaje de marcado para estructurar páginas web.</dd>
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets — lenguaje para aplicar estilos visuales a documentos HTML.</dd>
+      <dt>JavaScript</dt>
+      <dd>Lenguaje de programación que añade interactividad a las páginas web.</dd>
+    </dl>
+
+    <!-- <figure> y <figcaption>: contenido ilustrativo con leyenda -->
+    <h3>Figura con leyenda &lt;figure&gt; + &lt;figcaption&gt;</h3>
+    <figure>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/240px-HTML5_logo_and_wordmark.svg.png"
+        alt="Logo de HTML5"
+        width="100"
+      >
+      <figcaption>Figura 1: Logo oficial de HTML5 (fuente: Wikipedia)</figcaption>
+    </figure>
+
+    <!-- <details> y <summary>: contenido expandible/colapsable -->
+    <h3>Contenido expandible &lt;details&gt; + &lt;summary&gt;</h3>
+    <details>
+      <summary>Haz clic para ver más información sobre HTML5</summary>
+      <p>HTML5 es la quinta revisión del estándar HTML. Fue publicado en octubre de 2014
+         por el W3C. Introduce etiquetas semánticas, soporte nativo de audio y video,
+         canvas para gráficos 2D, y mejoras en formularios y accesibilidad.</p>
+    </details>
+
+    <!-- <dialog>: cuadro de diálogo nativo del navegador -->
+    <h3>Diálogo nativo &lt;dialog&gt;</h3>
+    <dialog id="miDialogo" open>
+      <p>Este es un <strong>&lt;dialog&gt;</strong>: una ventana modal nativa de HTML5.</p>
+      <button onclick="document.getElementById('miDialogo').close()">Cerrar</button>
+    </dialog>
+    <button onclick="document.getElementById('miDialogo').showModal()">Abrir diálogo</button>
+  </section>
+
+  <!-- ============================================================
+       D. ETIQUETAS DE TEXTO
+       ============================================================ -->
+  <section id="seccion-texto">
+    <h2>D. Etiquetas de Texto</h2>
+
+    <!-- <p>: párrafo estándar -->
+    <p>Este es un párrafo normal con la etiqueta <code>&lt;p&gt;</code>. Es el bloque
+       básico de texto en HTML.</p>
+
+    <!-- <br>: salto de línea dentro de un mismo bloque de texto -->
+    <p>Primera línea de texto.<br>Segunda línea (separada con &lt;br&gt; sin nuevo párrafo).</p>
+
+    <!-- <pre>: texto preformateado, respeta espacios y saltos de línea -->
+    <pre>
+  Este texto usa &lt;pre&gt;.
+    Los espacios    y saltos
+  de línea se conservan exactamente
+    como se escriben en el código.
+    </pre>
+
+    <!-- <blockquote>: cita en bloque de otra fuente -->
+    <blockquote cite="https://www.w3.org/TR/html52/">
+      "HTML5 es un lenguaje para estructurar y presentar contenido en la World Wide Web."
+      — W3C Specification
+    </blockquote>
+
+    <!-- <q>: cita corta en línea -->
+    <p>Tim Berners-Lee dijo: <q>La web es más una creación social que técnica.</q></p>
+
+    <!-- <cite>: título de una obra citada -->
+    <p>Esta información proviene de <cite>HTML5: Up and Running</cite> de Mark Pilgrim.</p>
+
+    <!-- <abbr>: abreviatura con significado completo al pasar el cursor -->
+    <p>El lenguaje <abbr title="HyperText Markup Language">HTML</abbr> es la base de la web.</p>
+
+    <!-- <dfn>: definición de un término -->
+    <p><dfn title="Sistema de gestión de contenidos">CMS</dfn> es una herramienta para
+       administrar contenido digital sin conocimientos técnicos avanzados.</p>
+
+    <!-- <code>: fragmento de código -->
+    <p>Para crear un párrafo usa la etiqueta: <code>&lt;p&gt;Tu texto aquí&lt;/p&gt;</code></p>
+
+    <!-- <kbd>: entrada de teclado -->
+    <p>Para guardar un archivo presiona <kbd>Ctrl</kbd> + <kbd>S</kbd>.</p>
+
+    <!-- <b> vs <strong> -->
+    <p><b>Texto en negrita</b> con &lt;b&gt; (solo visual) vs
+       <strong>texto importante</strong> con &lt;strong&gt; (semántico).</p>
+
+    <!-- <i> vs <em> -->
+    <p><i>Texto en cursiva</i> con &lt;i&gt; (estilo) vs
+       <em>texto enfatizado</em> con &lt;em&gt; (semántico).</p>
+
+    <!-- <mark>: texto resaltado -->
+    <p>En el examen, la pregunta clave fue: <mark>¿qué son las etiquetas semánticas?</mark></p>
+
+    <!-- <small>: texto de menor importancia -->
+    <p>Precio: $99.99 <small>(IVA incluido)</small></p>
+
+    <!-- <del> e <ins>: texto eliminado e insertado -->
+    <p>El precio anterior era <del>$150.00</del>, ahora es <ins>$99.99</ins>.</p>
+
+    <!-- <sub> y <sup>: subíndice y superíndice -->
+    <p>Fórmula química del agua: H<sub>2</sub>O</p>
+    <p>Potencia matemática: 2<sup>10</sup> = 1024</p>
+
+    <!-- <time>: fecha u hora con formato semántico -->
+    <p>La tarea fue asignada el
+       <time datetime="2024-01-15">15 de enero de 2024</time>.</p>
+
+    <!-- <data>: dato con valor legible por máquinas -->
+    <p>Producto: <data value="PROD-001">Teclado mecánico USB</data></p>
+
+    <!-- <span>: contenedor en línea genérico para aplicar estilos -->
+    <p>El cielo es <span style="color:blue; font-weight:bold;">azul</span> durante el día.</p>
+  </section>
+
+  <!-- ============================================================
+       E. ETIQUETAS DE ENLACE
+       ============================================================ -->
+  <section id="seccion-enlaces">
+    <h2>E. Etiquetas de Enlace</h2>
+
+    <!-- <a>: enlace a otra página, sección o recurso -->
+    <h3>Enlace &lt;a&gt;</h3>
+    <p>
+      <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener">
+        Visitar W3Schools HTML (abre en nueva pestaña)
+      </a>
+    </p>
+    <p>
+      <a href="#seccion-texto">Enlace interno → ir a la sección de Texto</a>
+    </p>
+
+    <!-- <map> y <area>: mapa de imagen con áreas clicables -->
+    <h3>Mapa de imagen &lt;map&gt; + &lt;area&gt;</h3>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/320px-Good_Food_Display_-_NCI_Visuals_Online.jpg"
+      alt="Mapa de alimentos"
+      usemap="#mapaAlimentos"
+      width="320"
+      height="213"
+    >
+    <map name="mapaAlimentos">
+      <!-- Área rectangular en la parte superior izquierda -->
+      <area
+        shape="rect"
+        coords="0,0,160,106"
+        href="https://es.wikipedia.org/wiki/Frutas"
+        alt="Zona de frutas"
+        target="_blank"
+        title="Haz clic: zona de frutas"
+      >
+      <!-- Área circular en el centro -->
+      <area
+        shape="circle"
+        coords="160,106,60"
+        href="https://es.wikipedia.org/wiki/Verduras"
+        alt="Zona de verduras"
+        target="_blank"
+        title="Haz clic: zona de verduras"
+      >
+    </map>
+    <p><small>Haz clic en diferentes zonas de la imagen para activar los &lt;area&gt;.</small></p>
+  </section>
+
+  <!-- ============================================================
+       F. ETIQUETAS DE IMAGEN
+       ============================================================ -->
+  <section id="seccion-imagenes">
+    <h2>F. Etiquetas de Imagen</h2>
+
+    <!-- <img>: imagen básica -->
+    <h3>&lt;img&gt; — Imagen básica</h3>
+    <img
+      src="https://picsum.photos/seed/html5/400/200"
+      alt="Imagen de ejemplo generada aleatoriamente"
+      width="400"
+      height="200"
+      title="Imagen de demostración"
+    >
+
+    <!-- <picture> y <source>: imagen responsiva con múltiples fuentes -->
+    <h3>&lt;picture&gt; + &lt;source&gt; — Imagen responsiva</h3>
+    <picture>
+      <!-- Versión para pantallas anchas (>= 600px) -->
+      <source
+        srcset="https://picsum.photos/seed/wide/600/200"
+        media="(min-width: 600px)"
+        type="image/jpeg"
+      >
+      <!-- Versión por defecto para pantallas pequeñas -->
+      <img
+        src="https://picsum.photos/seed/small/300/150"
+        alt="Imagen responsiva: cambia según el tamaño de pantalla"
+        width="300"
+      >
+    </picture>
+    <p><small>El navegador elige automáticamente la fuente correcta según el ancho de pantalla.</small></p>
+
+    <!-- <canvas>: lienzo para dibujar con JavaScript -->
+    <h3>&lt;canvas&gt; — Lienzo con JavaScript</h3>
+    <canvas
+      id="miCanvas"
+      width="400"
+      height="150"
+      style="border:1px solid #333;"
+      aria-label="Canvas con texto y formas dibujadas con JavaScript">
+      Tu navegador no soporta canvas.
+    </canvas>
+    <script>
+      // Obtenemos el contexto 2D del canvas y dibujamos formas
+      const canvas = document.getElementById('miCanvas');
+      const ctx = canvas.getContext('2d');
+
+      // Fondo
+      ctx.fillStyle = '#eef2ff';
+      ctx.fillRect(0, 0, 400, 150);
+
+      // Rectángulo
+      ctx.fillStyle = '#1a73e8';
+      ctx.fillRect(20, 30, 100, 60);
+
+      // Círculo
+      ctx.beginPath();
+      ctx.arc(200, 75, 50, 0, 2 * Math.PI);
+      ctx.fillStyle = '#e8390e';
+      ctx.fill();
+
+      // Texto
+      ctx.fillStyle = '#000';
+      ctx.font = '18px Arial';
+      ctx.fillText('¡Esto es <canvas>!', 260, 80);
+    </script>
+
+    <!-- <svg>: gráfico vectorial escalable directamente en HTML -->
+    <h3>&lt;svg&gt; — Gráfico vectorial en línea</h3>
+    <svg width="300" height="100" xmlns="http://www.w3.org/2000/svg"
+         aria-label="Gráfico SVG de demostración" role="img">
+      <!-- Rectángulo con bordes redondeados -->
+      <rect x="10" y="10" width="120" height="80" rx="10" ry="10"
+            fill="#34a853" stroke="#1a6e2e" stroke-width="2"/>
+      <!-- Círculo -->
+      <circle cx="200" cy="50" r="40" fill="#fbbc05" stroke="#c5962e" stroke-width="2"/>
+      <!-- Texto -->
+      <text x="10" y="110" font-family="Arial" font-size="14" fill="#333">SVG: escalable sin pérdida de calidad</text>
+    </svg>
+  </section>
+
+  <!-- ============================================================
+       G. ETIQUETAS DE MULTIMEDIA
+       ============================================================ -->
+  <section id="seccion-multimedia">
+    <h2>G. Etiquetas de Multimedia</h2>
+
+    <!-- <audio>: reproductor de audio con múltiples fuentes -->
+    <h3>&lt;audio&gt; — Archivo de audio</h3>
+    <audio controls>
+      <!-- <source> dentro de <audio>: diferentes formatos para compatibilidad -->
+      <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+    <p><small>El navegador elige el primer formato que soporte (OGG o MP3).</small></p>
+
+    <!-- <video>: reproductor de video con subtítulos -->
+    <h3>&lt;video&gt; — Archivo de video con &lt;track&gt;</h3>
+    <video controls width="400" poster="https://picsum.photos/seed/video/400/225">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      <!-- <track>: pista de subtítulos o descripciones -->
+      <track
+        kind="subtitles"
+        src="subtitles_en.vtt"
+        srclang="en"
+        label="English"
+        default
+      >
+      Tu navegador no soporta el elemento de video.
+    </video>
+    <p><small>&lt;track&gt; añade subtítulos accesibles al video.</small></p>
+
+    <!-- <iframe>: video de YouTube embebido -->
+    <h3>&lt;iframe&gt; — Video de YouTube</h3>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/kUMe1FH4CHE"
+      title="Tutorial HTML5 en YouTube"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      loading="lazy">
+    </iframe>
+    <p><small>Video de YouTube incrustado con <code>&lt;iframe&gt;</code>.</small></p>
+
+    <!-- <canvas> en contexto multimedia: animación con requestAnimationFrame -->
+    <h3>&lt;canvas&gt; como gráfico animado (multimedia dinámica)</h3>
+    <canvas id="canvasAnim" width="400" height="80"
+            style="border:1px solid #333; background:#111;"
+            aria-label="Animación de onda sinusoidal">
+    </canvas>
+    <script>
+      // Animación de onda sinusoidal para demostrar canvas en contexto de multimedia
+      const c = document.getElementById('canvasAnim');
+      const cx = c.getContext('2d');
+      let t = 0;
+      function animar() {
+        cx.clearRect(0, 0, 400, 80);
+        cx.beginPath();
+        cx.strokeStyle = '#00ff88';
+        cx.lineWidth = 2;
+        for (let x = 0; x < 400; x++) {
+          const y = 40 + 25 * Math.sin((x + t) * 0.05);
+          x === 0 ? cx.moveTo(x, y) : cx.lineTo(x, y);
+        }
+        cx.stroke();
+        t += 2;
+        requestAnimationFrame(animar);
+      }
+      animar();
+    </script>
+  </section>
+
+  <!-- ============================================================
+       PIE DE PÁGINA
+       ============================================================ -->
+  <footer style="margin-top:30px; border-top:1px solid #ccc; padding-top:10px; color:#555;">
+    <address>
+      <small>
+        Elaborado por <strong>Luis [Apellido]</strong> &mdash;
+        Curso ISW-512 Diseño de Aplicaciones Web &mdash;
+        <time datetime="2024-01">Enero 2024</time>
+      </small>
+    </address>
+  </footer>
+
+</body>
+</html>
