@@ -1,0 +1,468 @@
+/* ================================================================
+   style.css — Tarea 1: Etiquetas HTML5
+   Curso: ISW-512 Diseño de Aplicaciones Web
+   Estudiante: Luis Solis
+   ================================================================ */
+
+
+/* ----------------------------------------------------------------
+   1. RESET Y BASE
+   Elimina márgenes/paddings por defecto del navegador para tener
+   un punto de partida consistente en todos los browsers.
+   ---------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f7fa;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* ----------------------------------------------------------------
+   2. ENCABEZADO PRINCIPAL (header)
+   ---------------------------------------------------------------- */
+header {
+  background: linear-gradient(135deg, #1a73e8, #0d47a1);
+  color: white;
+  padding: 30px 24px;
+  border-radius: 8px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 4px;
+}
+
+/* Avatar del estudiante */
+header figure {
+  margin-top: 16px;
+}
+
+header figure img {
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+header figcaption {
+  font-size: 0.8rem;
+  margin-top: 6px;
+  opacity: 0.8;
+}
+
+
+/* ----------------------------------------------------------------
+   3. SECCIONES — contenedor de cada categoría de etiquetas
+   ---------------------------------------------------------------- */
+section {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+/* Título de cada sección */
+section > h2 {
+  font-size: 1.2rem;
+  color: #1a73e8;
+  border-left: 4px solid #1a73e8;
+  padding-left: 12px;
+  margin-bottom: 20px;
+  background: #e8f0fe;
+  padding: 8px 12px;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Subtítulos dentro de las secciones */
+section h3 {
+  font-size: 1rem;
+  color: #444;
+  margin: 20px 0 8px;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 4px;
+}
+
+
+/* ----------------------------------------------------------------
+   4. JERARQUÍA DE ENCABEZADOS (h1 - h6)
+   Tamaños decrecientes con colores para diferenciar niveles.
+   ---------------------------------------------------------------- */
+h1 { font-size: 2rem;   color: #1a1a2e; }
+h2 { font-size: 1.5rem; color: #16213e; }
+h3 { font-size: 1.25rem; color: #0f3460; }
+h4 { font-size: 1.1rem; color: #333;    }
+h5 { font-size: 1rem;   color: #555;    }
+h6 { font-size: 0.9rem; color: #777;    }
+
+
+/* ----------------------------------------------------------------
+   5. TEXTO Y TIPOGRAFÍA
+   ---------------------------------------------------------------- */
+p {
+  margin-bottom: 10px;
+}
+
+/* Texto preformateado: fondo oscuro estilo terminal */
+pre {
+  background: #1e1e2e;
+  color: #cdd6f4;
+  padding: 16px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+/* Código en línea */
+code {
+  background: #f0f4ff;
+  color: #d63384;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 0.88em;
+}
+
+/* Entrada de teclado */
+kbd {
+  background: #2d2d2d;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.85em;
+  border: 1px solid #555;
+  box-shadow: 0 2px 0 #000;
+}
+
+/* Cita en bloque */
+blockquote {
+  border-left: 4px solid #1a73e8;
+  background: #f0f7ff;
+  padding: 12px 16px;
+  margin: 12px 0;
+  font-style: italic;
+  color: #555;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Cita en línea */
+q {
+  color: #1a73e8;
+  font-style: italic;
+}
+
+/* Título de obra citada */
+cite {
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Abreviatura — cursor de ayuda para indicar que tiene tooltip */
+abbr[title] {
+  text-decoration: underline dotted;
+  cursor: help;
+  color: #0d47a1;
+}
+
+/* Término definido */
+dfn {
+  font-style: normal;
+  font-weight: bold;
+  color: #2e7d32;
+  border-bottom: 1px dotted #2e7d32;
+  cursor: help;
+}
+
+/* Texto resaltado */
+mark {
+  background: #fff176;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+/* Texto eliminado e insertado */
+del { color: #c62828; }
+ins  { color: #2e7d32; text-decoration: underline; }
+
+/* Subíndice y superíndice */
+sub, sup { font-size: 0.75em; }
+
+/* Fecha/hora */
+time {
+  color: #1a73e8;
+  font-weight: 500;
+}
+
+/* Span de ejemplo */
+span[style] {
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+
+/* ----------------------------------------------------------------
+   6. LISTAS
+   ---------------------------------------------------------------- */
+ul, ol {
+  padding-left: 28px;
+  margin: 8px 0 12px;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+/* Lista de descripción */
+dl {
+  margin: 8px 0 12px;
+}
+
+dt {
+  font-weight: bold;
+  color: #1a73e8;
+  margin-top: 8px;
+}
+
+dd {
+  margin-left: 20px;
+  color: #555;
+}
+
+
+/* ----------------------------------------------------------------
+   7. FIGURA Y FIGCAPTION
+   ---------------------------------------------------------------- */
+figure {
+  display: inline-block;
+  margin: 12px 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.82rem;
+  color: #777;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+
+/* ----------------------------------------------------------------
+   8. DETAILS Y SUMMARY
+   ---------------------------------------------------------------- */
+details {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin: 10px 0;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #1a73e8;
+  list-style: none; /* quita el triángulo por defecto en Firefox */
+}
+
+summary::before {
+  content: '▶ ';
+  font-size: 0.8em;
+}
+
+details[open] summary::before {
+  content: '▼ ';
+}
+
+details p {
+  margin-top: 10px;
+  color: #444;
+}
+
+
+/* ----------------------------------------------------------------
+   9. DIALOG
+   ---------------------------------------------------------------- */
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  max-width: 380px;
+  width: 90%;
+}
+
+dialog p {
+  margin-bottom: 16px;
+  color: #333;
+}
+
+dialog::backdrop {
+  background: rgba(0,0,0,0.4);
+}
+
+
+/* ----------------------------------------------------------------
+   10. ENLACES
+   ---------------------------------------------------------------- */
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0d47a1;
+}
+
+a:visited {
+  color: #7b1fa2;
+}
+
+
+/* ----------------------------------------------------------------
+   11. IMÁGENES E IFRAMES
+   ---------------------------------------------------------------- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+iframe {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+/* Canvas */
+canvas {
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+/* SVG */
+svg {
+  max-width: 100%;
+}
+
+
+/* ----------------------------------------------------------------
+   12. MULTIMEDIA — audio y video
+   ---------------------------------------------------------------- */
+audio {
+  width: 100%;
+  margin: 8px 0;
+}
+
+video {
+  max-width: 100%;
+  border-radius: 6px;
+  margin: 8px 0;
+}
+
+
+/* ----------------------------------------------------------------
+   13. BOTONES
+   ---------------------------------------------------------------- */
+button {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #0d47a1;
+}
+
+
+/* ----------------------------------------------------------------
+   14. ADDRESS
+   ---------------------------------------------------------------- */
+address {
+  font-style: normal;
+  background: #f0f4ff;
+  border: 1px solid #c5d8ff;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin: 10px 0;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+
+/* ----------------------------------------------------------------
+   15. DIV DE EJEMPLO
+   ---------------------------------------------------------------- */
+div[style*="background:#fafafa"] {
+  border-radius: 6px !important;
+}
+
+
+/* ----------------------------------------------------------------
+   16. FOOTER
+   ---------------------------------------------------------------- */
+footer {
+  margin-top: 30px;
+  border-top: 2px solid #e0e0e0;
+  padding-top: 16px;
+  text-align: center;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+footer address {
+  background: transparent;
+  border: none;
+  text-align: center;
+}
+
+
+/* ----------------------------------------------------------------
+   17. RESPONSIVE — ajustes para pantallas pequeñas
+   ---------------------------------------------------------------- */
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  section {
+    padding: 16px;
+  }
+
+  iframe {
+    height: 200px;
+  }
+}
